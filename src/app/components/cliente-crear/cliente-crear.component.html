@@ -1,0 +1,9 @@
+<div class="container">
+  <h2>Agregar Cliente</h2>
+  <input type="number" [(ngModel)]="nuevoCliente.idCliente" class="form-control mb-2" placeholder="ID Cliente">
+  <input type="text" [(ngModel)]="nuevoCliente.nombreCliente" class="form-control mb-2" placeholder="Nombre">
+  <input type="text" [(ngModel)]="nuevoCliente.direccion" class="form-control mb-2" placeholder="Dirección">
+  <input type="text" [(ngModel)]="nuevoCliente.telefono" class="form-control mb-2" placeholder="Teléfono">
+  <input type="email" [(ngModel)]="nuevoCliente.email" class="form-control mb-2" placeholder="Email">
+  <button class="btn btn-success" (click)="agregarCliente()">Agregar</button>
+</div>
