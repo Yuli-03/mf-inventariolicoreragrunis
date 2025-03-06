@@ -11,6 +11,11 @@ import { ClienteCrearComponent } from './components/cliente-crear/cliente-crear.
 import { ClienteActualizarComponent } from './components/cliente-actualizar/cliente-actualizar.component';
 import { ClienteEliminarComponent } from './components/cliente-eliminar/cliente-eliminar.component';
 import {FormsModule} from "@angular/forms";
+import { ProveedorActualizarComponent } from './components/proveedor-actualizar/proveedor-actualizar.component';
+import { ProveedorBuscarComponent } from './components/proveedor-buscar/proveedor-buscar.component';
+import { ProveedorCrearComponent } from './components/proveedor-crear/proveedor-crear.component';
+import { ProveedorEliminarComponent } from './components/proveedor-eliminar/proveedor-eliminar.component';
+import { ProveedorListComponent } from './components/proveedor-list/proveedor-list.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +25,12 @@ import {FormsModule} from "@angular/forms";
     ClienteBuscarComponent,
     ClienteCrearComponent,
     ClienteActualizarComponent,
-    ClienteEliminarComponent
+    ClienteEliminarComponent,
+    ProveedorActualizarComponent,
+    ProveedorBuscarComponent,
+    ProveedorCrearComponent,
+    ProveedorEliminarComponent,
+    ProveedorListComponent
   ],
   imports: [
     BrowserModule,

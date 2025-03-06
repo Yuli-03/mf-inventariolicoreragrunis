@@ -1,0 +1,9 @@
+<div class="container">
+  <h2>Agregar Proveedor</h2>
+  <input type="number" [(ngModel)]="nuevoProveedor.idProveedor" class="form-control mb-2" placeholder="ID Proveedor">
+  <input type="text" [(ngModel)]="nuevoProveedor.nombre" class="form-control mb-2" placeholder="Nombre">
+  <input type="text" [(ngModel)]="nuevoProveedor.direccion" class="form-control mb-2" placeholder="Dirección">
+  <input type="text" [(ngModel)]="nuevoProveedor.telefono" class="form-control mb-2" placeholder="Teléfono">
+  <input type="email" [(ngModel)]="nuevoProveedor.email" class="form-control mb-2" placeholder="Email">
+  <button class="btn btn-success" (click)="agregarProveedor()">Agregar</button>
+</div>

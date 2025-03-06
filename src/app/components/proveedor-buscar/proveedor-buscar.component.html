@@ -1,0 +1,12 @@
+<div class="container">
+  <h2>Buscar Proveedor</h2>
+  <input type="number" [(ngModel)]="idProveedor" class="form-control mb-2" placeholder="ID del Proveedor">
+  <button class="btn btn-primary" (click)="buscarProveedor()">Buscar</button>
+
+  <div *ngIf="proveedor" class="mt-3">
+    <p><strong>Nombre:</strong> {{ proveedor.nombre }}</p>
+    <p><strong>Dirección:</strong> {{ proveedor.direccion }}</p>
+    <p><strong>Teléfono:</strong> {{ proveedor.telefono }}</p>
+    <p><strong>Email:</strong> {{ proveedor.email }}</p>
+  </div>
+</div>
