@@ -11,6 +11,11 @@ import {ProveedorBuscarComponent} from "./components/proveedor-buscar/proveedor-
 import {ProveedorCrearComponent} from "./components/proveedor-crear/proveedor-crear.component";
 import {ProveedorActualizarComponent} from "./components/proveedor-actualizar/proveedor-actualizar.component";
 import {ProveedorEliminarComponent} from "./components/proveedor-eliminar/proveedor-eliminar.component";
+import {CategoriaListComponent} from "./components/categoria-list/categoria-list.component";
+import {CategoriaBuscarComponent} from "./components/categoria-buscar/categoria-buscar.component";
+import {CategoriaCrearComponent} from "./components/categoria-crear/categoria-crear.component";
+import {CategoriaActualizarComponent} from "./components/categoria-actualizar/categoria-actualizar.component";
+import {CategoriaEliminarComponent} from "./components/categoria-eliminar/categoria-eliminar.component";
 
 const routes: Routes = [
   {
@@ -27,6 +32,11 @@ const routes: Routes = [
       { path: 'proveedores/crear', component: ProveedorCrearComponent },
       { path: 'proveedores/actualizar', component: ProveedorActualizarComponent },
       { path: 'proveedores/eliminar', component: ProveedorEliminarComponent },
+      { path: 'categorias/listar', component: CategoriaListComponent },
+      { path: 'categorias/buscar', component: CategoriaBuscarComponent },
+      { path: 'categorias/crear', component: CategoriaCrearComponent },
+      { path: 'categorias/actualizar', component: CategoriaActualizarComponent },
+      { path: 'categorias/eliminar', component: CategoriaEliminarComponent },
       { path: '', redirectTo: 'clientes/listar', pathMatch: 'full' } // Redirección inicial
     ],
   },

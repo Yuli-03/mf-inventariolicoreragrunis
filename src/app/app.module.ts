@@ -16,6 +16,11 @@ import { ProveedorBuscarComponent } from './components/proveedor-buscar/proveedo
 import { ProveedorCrearComponent } from './components/proveedor-crear/proveedor-crear.component';
 import { ProveedorEliminarComponent } from './components/proveedor-eliminar/proveedor-eliminar.component';
 import { ProveedorListComponent } from './components/proveedor-list/proveedor-list.component';
+import { CategoriaActualizarComponent } from './components/categoria-actualizar/categoria-actualizar.component';
+import { CategoriaBuscarComponent } from './components/categoria-buscar/categoria-buscar.component';
+import { CategoriaCrearComponent } from './components/categoria-crear/categoria-crear.component';
+import { CategoriaEliminarComponent } from './components/categoria-eliminar/categoria-eliminar.component';
+import { CategoriaListComponent } from './components/categoria-list/categoria-list.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +35,12 @@ import { ProveedorListComponent } from './components/proveedor-list/proveedor-li
     ProveedorBuscarComponent,
     ProveedorCrearComponent,
     ProveedorEliminarComponent,
-    ProveedorListComponent
+    ProveedorListComponent,
+    CategoriaActualizarComponent,
+    CategoriaBuscarComponent,
+    CategoriaCrearComponent,
+    CategoriaEliminarComponent,
+    CategoriaListComponent
   ],
   imports: [
     BrowserModule,

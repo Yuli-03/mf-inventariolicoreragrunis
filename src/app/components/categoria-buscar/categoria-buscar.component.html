@@ -1,0 +1,9 @@
+<div class="container">
+  <h2>Buscar Categoria</h2>
+  <input type="number" [(ngModel)]="idCategoria" class="form-control mb-2" placeholder="ID de la Categoria">
+  <button class="btn btn-primary" (click)="buscarCategoria()">Buscar</button>
+
+  <div *ngIf="categoria" class="mt-3">
+    <p><strong>Nombre:</strong> {{ categoria.nombreCategoria }}</p>
+  </div>
+</div>
