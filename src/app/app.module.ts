@@ -10,7 +10,7 @@ import { ClienteBuscarComponent } from './components/cliente-buscar/cliente-busc
 import { ClienteCrearComponent } from './components/cliente-crear/cliente-crear.component';
 import { ClienteActualizarComponent } from './components/cliente-actualizar/cliente-actualizar.component';
 import { ClienteEliminarComponent } from './components/cliente-eliminar/cliente-eliminar.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { ProveedorActualizarComponent } from './components/proveedor-actualizar/proveedor-actualizar.component';
 import { ProveedorBuscarComponent } from './components/proveedor-buscar/proveedor-buscar.component';
 import { ProveedorCrearComponent } from './components/proveedor-crear/proveedor-crear.component';
@@ -21,6 +21,7 @@ import { CategoriaBuscarComponent } from './components/categoria-buscar/categori
 import { CategoriaCrearComponent } from './components/categoria-crear/categoria-crear.component';
 import { CategoriaEliminarComponent } from './components/categoria-eliminar/categoria-eliminar.component';
 import { CategoriaListComponent } from './components/categoria-list/categoria-list.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -40,13 +41,15 @@ import { CategoriaListComponent } from './components/categoria-list/categoria-li
     CategoriaBuscarComponent,
     CategoriaCrearComponent,
     CategoriaEliminarComponent,
-    CategoriaListComponent
+    CategoriaListComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

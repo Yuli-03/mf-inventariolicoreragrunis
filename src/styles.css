@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+.card {
+  border-radius: 15px;
+}
+
+.card-img-top {
+  border-radius: 15px 15px 0 0;
+}
+
+input[type="text"], input[type="password"] {
+  height: 45px;
+}
+
+.btn-block {
+  margin-top: 15px;
+}
+
+.container {
+  background-color: #f8f9fa;
+}

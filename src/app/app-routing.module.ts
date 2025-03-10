@@ -16,11 +16,17 @@ import {CategoriaBuscarComponent} from "./components/categoria-buscar/categoria-
 import {CategoriaCrearComponent} from "./components/categoria-crear/categoria-crear.component";
 import {CategoriaActualizarComponent} from "./components/categoria-actualizar/categoria-actualizar.component";
 import {CategoriaEliminarComponent} from "./components/categoria-eliminar/categoria-eliminar.component";
+import {LoginComponent} from "./components/login/login.component";
 
 const routes: Routes = [
+  // Ruta independiente para login
+  { path: 'login', component: LoginComponent },
+  { path: '', redirectTo: 'login', pathMatch: 'full' }, // Redirección inicial al login
+
+  // Rutas protegidas que requieren HomeComponent (con sidebar)
   {
     path: '',
-    component: HomeComponent, // El sidebar siempre se mantiene
+    component: HomeComponent, // El HomeComponent solo se usará aquí
     children: [
       { path: 'clientes/listar', component: ClienteListComponent },
       { path: 'clientes/buscar', component: ClienteBuscarComponent },
@@ -37,13 +43,12 @@ const routes: Routes = [
       { path: 'categorias/crear', component: CategoriaCrearComponent },
       { path: 'categorias/actualizar', component: CategoriaActualizarComponent },
       { path: 'categorias/eliminar', component: CategoriaEliminarComponent },
-      { path: '', redirectTo: 'clientes/listar', pathMatch: 'full' } // Redirección inicial
     ],
   },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
